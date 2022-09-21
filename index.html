@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <footer>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please take part in our survey so we could improve our service in the future!</p>
+    </footer>
+    <form id="survey-form">
+     <fieldset>
+      <label for="name" id="name-label">Your name: <input type="text" id="name" required placeholder="Write here...">
+      <label for="email" id="email-label">Your e-mail: <input type="email" id="email" required placeholder="Write here...">
+      <label for="number" id="number-label">Your age(optional): <input type="number" id="number" min="13" max="120" placeholder="Age..."></label>
+    </fieldset>  
+    <fieldset> 
+    <label for="dropdown">What is your favorite music genre?</label>
+    <select id="dropdown">
+      <option>(select one)</option>
+      <option>Rap/Hip-Hop</option>
+      <option>Rock</option>
+      <option>Classical</option>
+    </select> 
+  </fieldset>
+  <fieldset>  
+     <label>Are you from Russia?
+       <input type="radio" name="country" value="Yes">Yes</input>
+       <input type="radio" name="country" value="No">No</input>
+      </label>
+      <label>Your favorite means of listening to music:</label>
+       <input type="checkbox" value="hphones">Headphones</input>
+       <input type="checkbox" value="speakers">Speakers</input>
+       <input type="checkbox" value="other">Other</input>
+       <label>Other? <textarea rows="1" cols="10"></textarea>
+    </fieldset> 
+       <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html>
